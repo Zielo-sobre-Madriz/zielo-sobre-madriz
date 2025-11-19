@@ -37,16 +37,3 @@ function cargarBloques() {
         contador++;
     }
 }
-
-// Primera carga
-cargarBloques();
-
-// SCROLL INFINITO CONTROLADO
-window.addEventListener("scroll", () => {
-    if (
-        window.innerHeight + window.scrollY >= document.body.offsetHeight - 50 &&
-        contador <= limite // evita cargar más tras el bloque 10
-    ) {
-        cargarBloques();
-    }
-});
