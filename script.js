@@ -19,13 +19,12 @@ btn.addEventListener("click", () => {
 
 // CARGA INFINITA DE BLOQUES (LÍMITE 10)
 const container = document.getElementById("contenido");
-let contador = 1;
+let contador = 0;
 const limite = 10;
 
 function cargarBloques() {
-    for (let i = 0; i < 5; i++) {
+    if (contador >= LIMITE) return;
 
-        if (contador > 10) return; // Se detiene estrictamente al llegar a 10
 
         const bloque = document.createElement("div");
         bloque.className = "bloque";
@@ -36,4 +35,16 @@ function cargarBloques() {
         container.appendChild(bloque);
         contador++;
     }
-}
+// cargar los primeros bloques
+cargarBloques();
+cargarBloques();
+cargarBloques();
+
+// scroll infinito controlado
+window.addEventListener("scroll", () => {
+    const bottom = window.innerHeight + window.scrollY >= document.body.offsetHeight - 50;
+
+    if (bottom && contador < LIMITE) {
+        cargarBloques();
+    }
+});
