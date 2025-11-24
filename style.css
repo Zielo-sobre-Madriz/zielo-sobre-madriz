@@ -1,0 +1,99 @@
+ :root {
+     --primary: #3b4550;
+     --primary-dark: #0a3d66;
+     --primary-hover: #0d5ba8;
+     --primary-light: #09f;
+     --background: #06182a;
+     --text-primary: #ffffff;
+     --text-secondary: #cbd5e1;
+     --text-muted: #94a3b8;
+     --border: rgba(255, 255, 255, 0.1);
+     --card-bg: #1e293b;
+     --shadow: rgba(0, 0, 0, 0.3);
+     --input-bg: #1e293b;
+     --hsla-example: hsla(210, 100%, 56%, 1);
+ }
+
+ * {
+     margin: 0;
+
+
+     padding: 0;
+ }
+
+
+
+
+
+ main {
+     background-color: var(--background);
+     display: flex;
+     height: 100vh;
+     padding: 2px;
+
+     width: 100vw;
+
+
+ }
+
+ section {
+     padding: 50px;
+
+
+     width: 60%;
+ }
+
+ aside {
+     height: 100%;
+     width: 40%;
+ }
+
+ h1 {
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     height: 40%;
+     font-size: 13rem;
+     margin-left: 15px;
+     color: var(--text-primary);
+
+
+ }
+
+ h2 {
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     color: var(--text-secondary);
+     font-size: 5rem;
+     margin-left: 30px;
+ }
+
+ .cuadrado {
+     border: 5px solid var(--border);
+     border-radius: 10px;
+     margin: 30px;
+     padding: 50px;
+     background-color: var(--card-bg);
+
+ }
+
+ .horizontal {
+     display: flex;
+     justify-content: space-around;
+     margin-top: 70px;
+ }
+
+ h4 {
+     font-size: 3rem;
+     color: var(--text-primary);
+
+
+ }
+
+ p {
+     font-size: 1.8rem;
+     color: var(--text-secondary);
+ }
+
+ img {
+     height: 100%;
+     object-fit: cover;
+     width: 100%;
+ }
