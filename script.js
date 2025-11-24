@@ -17,17 +17,20 @@ btn.addEventListener("click", () => {
 });
 
 
-// CARGA INFINITA DE BLOQUES
+// CARGA INFINITA DE BLOQUES (LÍMITE 10)
 const container = document.getElementById("contenido");
-
+let contador = 0;
+const limite = 10;
 
 function cargarBloques() {
-    
+    if (contador >= LIMITE) return;
+
 
         const bloque = document.createElement("div");
         bloque.className = "bloque";
         bloque.innerHTML = `
-        
+            <h3>Bloque ${contador}</h3>
+            <p>Contenido dinámico cargado automáticamente.</p>
         `;
         container.appendChild(bloque);
         contador++;
@@ -41,7 +44,7 @@ cargarBloques();
 window.addEventListener("scroll", () => {
     const bottom = window.innerHeight + window.scrollY >= document.body.offsetHeight - 50;
 
-    if (bottom) {
+    if (bottom && contador < LIMITE) {
         cargarBloques();
     }
 });
