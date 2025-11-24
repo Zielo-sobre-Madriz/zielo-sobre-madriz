@@ -30,6 +30,7 @@ Nos aliamos con:
 ---
 
 ## 🏗️ Qué Estamos Haciendo
+aportación Rubén
 
 Llevamos nuestro mensaje a la acción con propuestas concretas para la **emancipación energética**:
 
