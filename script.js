@@ -41,7 +41,7 @@ function cargarBloques() {
 window.addEventListener("scroll", () => {
     const bottom = window.innerHeight + window.scrollY >= document.body.offsetHeight - 50;
 
-    if (bottom && contador < LIMITE) {
+    if (bottom && contador < limite) {
         cargarBloques();
     }
 });

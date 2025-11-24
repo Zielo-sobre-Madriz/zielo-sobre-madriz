@@ -121,7 +121,6 @@ header div a {
 
 /* Hero */
 main  section:nth-child(1) {
-main > section:nth-child(1) {
   height: 500px;
   text-align: center;
   display: flex;
@@ -279,7 +278,6 @@ main > section:nth-child(2) footer {
     }
 }
 
-*/
 
 /* Footer */
 footer {
@@ -295,7 +293,6 @@ footer {
     font-size: 0.875rem;
   }
 
-}
 
 article {
   background-color: var(--card-bg);
@@ -570,8 +567,6 @@ article {
 
 }
 
-
-
 .c2-item h3 {
     color: var(--text-primary);
     font-size: 1.2rem;
@@ -619,4 +614,3 @@ article {
   cursor: pointer;
   font-size: 20px;
 }
-
