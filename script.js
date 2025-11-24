@@ -30,15 +30,12 @@ function cargarBloques() {
         bloque.className = "bloque";
         bloque.innerHTML = `
             <h3>Bloque ${contador}</h3>
-            <p>Contenido dinámico cargado automáticamente.</p>
+            
         `;
         container.appendChild(bloque);
         contador++;
     }
-// cargar los primeros bloques
-cargarBloques();
-cargarBloques();
-cargarBloques();
+
 
 // scroll infinito controlado
 window.addEventListener("scroll", () => {
