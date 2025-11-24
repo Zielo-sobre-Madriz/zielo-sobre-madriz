@@ -23,7 +23,7 @@ let contador = 0;
 const limite = 10;
 
 function cargarBloques() {
-    if (contador >= LIMITE) return;
+    if (contador >= limite) return;
 
 
         const bloque = document.createElement("div");
