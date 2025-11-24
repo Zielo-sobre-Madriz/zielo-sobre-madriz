@@ -53,6 +53,7 @@ h1 {
   align-items: center;
   gap: 0.5rem;
 
+<<<<<<< Updated upstream
 }
 
 /* Icono junto al h1 */
@@ -73,6 +74,8 @@ h1 + p {
 header  {
 
 
+=======
+>>>>>>> Stashed changes
   /* Icono junto al h1 */
   svg {
     width: 2rem;
@@ -126,12 +129,15 @@ nav {
   }
 }
 
+<<<<<<< Updated upstream
 /* scroll suave botón */
 html {
   scroll-behavior: smooth;
 }
 
 
+=======
+>>>>>>> Stashed changes
 /* Botones del Header */
 header div a {
   padding: 0.5rem 1rem;
@@ -282,6 +288,7 @@ main > section:nth-child(2) > div > div:first-child > p {
 }
 
 /* Grid de Features */
+<<<<<<< Updated upstream
 
 main > section:nth-child(2) footer article {
   background: #0d2438;
@@ -290,6 +297,8 @@ main > section:nth-child(2) footer article {
   box-shadow: 0 8px 22px rgba(0,0,0,0.45);
 }
 
+=======
+>>>>>>> Stashed changes
 main > section:nth-child(2) footer {
   display: grid;
   gap: 16px;
@@ -306,14 +315,22 @@ main > section:nth-child(2) footer {
 
 /*responsive*/
 
+<<<<<<< Updated upstream
 
 
 @media (width >=640px){
 
+=======
+@media (width >=640px){
+>>>>>>> Stashed changes
     main > section:nth-child(2) footer {
         grid-template-columns: 1fr;
     }
 }
+<<<<<<< Updated upstream
+=======
+*/
+>>>>>>> Stashed changes
 
 /* Footer */
 footer {
@@ -322,7 +339,10 @@ footer {
   text-align: center;
   padding: 16px;
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
   small {
     color: var(--text-muted);
     font-size: 0.875rem;
@@ -335,7 +355,10 @@ article {
   margin-bottom: 16px;
   border-radius: 1rem;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+<<<<<<< Updated upstream
 }
+=======
+>>>>>>> Stashed changes
 /* iconos svg que hemos puesto*/
   svg {
     color: var(--primary-light);
@@ -345,6 +368,7 @@ article {
     border-radius: 100%;
     padding: 16px;
   }
+<<<<<<< Updated upstream
 #btnSubir {
     position: fixed;
     bottom: 20px;
@@ -361,6 +385,8 @@ article {
     cursor: pointer;
     font-size: 20px;
 }
+=======
+>>>>>>> Stashed changes
 
   p {
     color: var(--text-muted);
@@ -369,6 +395,7 @@ article {
   h3 {
     font-weight: 500;
   }
+<<<<<<< Updated upstream
 
   /* Botón azul */
 .btn-main-blue {
@@ -613,4 +640,6 @@ article {
     box-shadow:
         0 0 14px rgba(217,70,239,0.55),
         0 0 28px rgba(217,70,239,0.35);
+=======
+>>>>>>> Stashed changes
 }
