@@ -120,7 +120,19 @@ header div a {
 }
 
 /* Hero */
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 main  section:nth-child(1) {
+=======
+main > section:nth-child(1) {
+>>>>>>> Stashed changes
+=======
+main > section:nth-child(1) {
+>>>>>>> Stashed changes
+=======
+main > section:nth-child(1) {
+>>>>>>> Stashed changes
   height: 500px;
   text-align: center;
   display: flex;
@@ -277,7 +289,19 @@ main > section:nth-child(2) footer {
         grid-template-columns: 1fr;
     }
 }
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
+=======
+*/
+>>>>>>> Stashed changes
+=======
+*/
+>>>>>>> Stashed changes
+=======
+*/
+>>>>>>> Stashed changes
 
 /* Footer */
 footer {
@@ -285,14 +309,35 @@ footer {
   border-top: 1px solid var(--border);
   text-align: center;
   padding: 16px;
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 }
 
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 
   small {
     color: var(--text-muted);
     font-size: 0.875rem;
   }
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
+=======
+}
+>>>>>>> Stashed changes
+=======
+}
+>>>>>>> Stashed changes
+=======
+}
+>>>>>>> Stashed changes
 
 article {
   background-color: var(--card-bg);
@@ -300,8 +345,17 @@ article {
   margin-bottom: 16px;
   border-radius: 1rem;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
 }
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 /* iconos svg que hemos puesto*/
   svg {
     color: var(--primary-light);
@@ -319,6 +373,9 @@ article {
   h3 {
     font-weight: 500;
   }
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
 
   /* Botón azul */
@@ -613,4 +670,10 @@ article {
   align-items: center;
   cursor: pointer;
   font-size: 20px;
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 }
