@@ -52,6 +52,7 @@ h1 {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+
 }
 
 /* Icono junto al h1 */
@@ -70,6 +71,21 @@ h1 + p {
   margin-bottom: 2rem;
 }
 header  {
+
+
+  /* Icono junto al h1 */
+  svg {
+    width: 2rem;
+    height: 2rem;
+    color: var(--primary-light);
+  }
+}
+/* Párrafo justo después del h1 */
+h1 + p {
+  text-wrap: balance;
+  margin-bottom: 2rem
+}
+
 /* Header */
 header {
   border-bottom: 1px solid var(--border);
@@ -79,6 +95,9 @@ header {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+
+/* Título del header */
+  h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.25rem;
     font-weight: 700;
@@ -111,6 +130,7 @@ nav {
 html {
   scroll-behavior: smooth;
 }
+
 
 /* Botones del Header */
 header div a {
@@ -269,6 +289,7 @@ main > section:nth-child(2) footer article {
   border-radius: 32px;
   box-shadow: 0 8px 22px rgba(0,0,0,0.45);
 }
+
 main > section:nth-child(2) footer {
   display: grid;
   gap: 16px;
@@ -286,13 +307,21 @@ main > section:nth-child(2) footer {
 /*responsive*/
 
 
-@media (min-width: 640px) {
 
-@media (min-width: 640px) {
+@media (width >=640px){
+
     main > section:nth-child(2) footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* Footer */
+footer {
+  background-color: var(--background);
+  border-top: 1px solid var(--border);
+  text-align: center;
+  padding: 16px;
+
 
   small {
     color: var(--text-muted);
@@ -577,9 +606,11 @@ article {
 }
 
 /* UBICACIÓN (púrpura suave) */
+
 .c2-item.location i {
     color: #d946ef;
     background: rgba(217,70,239,0.20);
     box-shadow:
         0 0 14px rgba(217,70,239,0.55),
-        0 0 28px rgba(217,70,239,0.35);}
+        0 0 28px rgba(217,70,239,0.35);
+}
