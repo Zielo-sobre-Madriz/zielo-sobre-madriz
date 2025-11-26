@@ -616,12 +616,21 @@ article {
 }
 
 /*infignación a la acción*/
-.indignacion{
-  background-color: var(--card-bg);
-  padding: 2rem;
-  margin-bottom: 16px;
-  border-radius: 1rem;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+.indignacion {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.2rem;
+  color: var(--primary-light);
+  margin-top: 2rem;
 }
-
+.indignacion p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+.problema, .realidad, .datos, .respuesta {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 30px rgba(0,153,255,0.35);
+    border-color: var(--primary-light);
+}
 
