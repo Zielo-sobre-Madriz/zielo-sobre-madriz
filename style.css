@@ -614,3 +614,14 @@ article {
   cursor: pointer;
   font-size: 20px;
 }
+
+/*infignación a la acción*/
+.indignacion{
+  background-color: var(--card-bg);
+  padding: 2rem;
+  margin-bottom: 16px;
+  border-radius: 1rem;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+
