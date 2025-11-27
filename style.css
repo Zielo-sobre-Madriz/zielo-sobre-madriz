@@ -32,7 +32,7 @@ body {
 
 /* Circle (imagen redonda) */
 .circle {
-    width: 120px;            /* tamaño más apropiado para tarjeta horizontal */
+    width: 120px;            /* */
     height: 120px;
     border-radius: 50%;
     overflow: hidden;
@@ -106,7 +106,7 @@ main > section:first-child img {
   mask-image: linear-gradient(to bottom, rgba(16,25,34,1) 5%, rgba(16,25,34,0) 80%);
 }
 
-/* Features Vertical Grid: tarjetas apiladas */
+/*  tarjetas apiladas */
 .grid {
   display: flex;
   flex-direction: column;
@@ -115,26 +115,26 @@ main > section:first-child img {
   padding: 1rem 0;
 }
 
-/* Cada item: tarjeta horizontal (imagen izquierda, texto derecha) */
+/* item:*/
 .item {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px;
-  background: var(--card-bg);   /* misma paleta, sin tocar colores */
+  background: var(--card-bg);   /* misma paleta */
   padding: 16px;
   border-radius: 12px;
   width: min(980px, 95%);
   box-shadow: 0 6px 12px -6px var(--shadow);
 }
 
-/* Contenido dentro de la tarjeta (texto) */
+/* Contenido */
 .item-content {
   text-align: left;
   flex: 1;
 }
 
-/* Títulos y párrafos dentro de cada item */
+/* Títulos */
 .item-content h3 {
   margin-bottom: 8px;
   font-size: 1.125rem;
@@ -144,7 +144,7 @@ main > section:first-child img {
   line-height: 1.35;
 }
 
-/* Otros artículos (fuera del grid) mantienen su estilo */
+/* artículos */
 article {
   background: var(--card-bg);
   padding: 2rem;
@@ -165,7 +165,7 @@ article p {
   color: var(--text-muted);
 }
 
-/* Simple Footer */
+/* foto */
 footer {
   border-top: 1px solid var(--border);
   padding: 16px;
@@ -175,7 +175,7 @@ footer small {
   color: var(--text-muted);
 }
 
-/* Responsive: en pantallas pequeñas, cada tarjeta pasa a vertical (imagen encima) */
+/* foto */
 @media (max-width: 700px) {
   .item {
     flex-direction: column;
