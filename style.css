@@ -1,4 +1,4 @@
-/* GRID GENERAL */
+/* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -7,7 +7,7 @@
   padding: 0 1.5rem;
 }
 
-/* TARJETAS */
+/* tarjetas */
 .item {
   background: #111827;
   padding: 2rem 1.5rem;
@@ -22,21 +22,21 @@
   box-shadow: 0 8px 25px rgba(0,0,0,0.45);
 }
 
-/* TITULOS DE CADA TARJETA */
+/* Titulo por tarjeta */
 .item h3 {
   font-size: 1.25rem;
   margin-bottom: .75rem;
   color: #fff;
 }
 
-/* TEXTO */
+/* texto */
 .item p {
   font-size: .95rem;
   color: var(--text-secondary);
   margin-bottom: 1.5rem;
 }
 
-/* IMÁGENES CIRCULARES */
+/* Imagenes Circulares */
 .circle {
   width: 210px;
   height: 210px;
