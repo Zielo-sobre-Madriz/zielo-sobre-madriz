@@ -30,20 +30,22 @@ body {
   flex-direction: column;
 }
 
-circle {
-        width: 220px;
-        height: 220px;
-        border-radius: 50%;
-        overflow: hidden;
-        margin: 0 auto 20px auto;
-        background: #222;
-    }
+/* Circle (imagen redonda) */
+.circle {
+    width: 120px;            /* tamaño más apropiado para tarjeta horizontal */
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex: 0 0 120px;
+    background: #222;
+}
 
-    circle img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 
 /* Headings */
 h1 {
@@ -52,11 +54,13 @@ h1 {
   align-items: center;
   gap: .5rem;
 }
+
 h1 svg {
   width: 2rem;
   height: 2rem;
   color: var(--primary-light);
 }
+
 h1 + p {
   margin-bottom: 2rem;
 }
@@ -83,13 +87,6 @@ header nav a {
 header nav a:hover {
   color: var(--primary);
 }
-header div a {
-  padding: .5rem 1rem;
-  background: #334155;
-  border-radius: .5rem;
-  color: #fff;
-  text-decoration: none;
-}
 
 /* Hero */
 main > section:first-child {
@@ -109,67 +106,52 @@ main > section:first-child img {
   mask-image: linear-gradient(to bottom, rgba(16,25,34,1) 5%, rgba(16,25,34,0) 80%);
 }
 
-/* Search Form */
-form {
-  max-width: 42rem;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-form > div {
+/* Features Vertical Grid: tarjetas apiladas */
+.grid {
   display: flex;
+  flex-direction: column;
+  gap: 20px;
   align-items: center;
-  background: var(--input-bg);
-  border-radius: .5rem;
-  padding: .5rem;
-  box-shadow: 0 10px 15px -3px var(--shadow);
-  gap: .5rem;
+  padding: 1rem 0;
 }
-form span {
-  color: var(--text-muted);
+
+/* Cada item: tarjeta horizontal (imagen izquierda, texto derecha) */
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  background: var(--card-bg);   /* misma paleta, sin tocar colores */
+  padding: 16px;
+  border-radius: 12px;
+  width: min(980px, 95%);
+  box-shadow: 0 6px 12px -6px var(--shadow);
 }
-form input {
+
+/* Contenido dentro de la tarjeta (texto) */
+.item-content {
+  text-align: left;
   flex: 1;
-  background: none;
-  border: none;
-  color: var(--text-primary);
-  outline: none;
-  padding: .75rem .5rem;
-}
-form input::placeholder {
-  color: #64748b;
-}
-button {
-  padding: .75rem 1.5rem;
-  border: none;
-  background: var(--primary);
-  color: #fff;
-  border-radius: .5rem;
-  cursor: pointer;
-}
-button:hover {
-  background: var(--primary-hover);
 }
 
-/* Features Section */
-main > section:nth-child(2) {
-  padding: 2rem 1.5rem;
+/* Títulos y párrafos dentro de cada item */
+.item-content h3 {
+  margin-bottom: 8px;
+  font-size: 1.125rem;
 }
-main > section:nth-child(2) h2 {
-  font-size: 1.875rem;
-  margin-bottom: 1rem;
-}
-main > section:nth-child(2) footer {
-  display: grid;
-  gap: 16px;
+.item-content p {
+  color: var(--text-muted);
+  line-height: 1.35;
 }
 
-/* Cards */
+/* Otros artículos (fuera del grid) mantienen su estilo */
 article {
   background: var(--card-bg);
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
+
 article svg {
   width: 64px;
   height: 64px;
@@ -178,6 +160,7 @@ article svg {
   color: var(--primary-light);
   background: rgba(0,153,255,.3);
 }
+
 article p {
   color: var(--text-muted);
 }
@@ -187,13 +170,20 @@ footer {
   border-top: 1px solid var(--border);
   padding: 16px;
 }
+
 footer small {
   color: var(--text-muted);
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-  .grid {
-    justify-content: center;
+/* Responsive: en pantallas pequeñas, cada tarjeta pasa a vertical (imagen encima) */
+@media (max-width: 700px) {
+  .item {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 18px;
+  }
+  .item-content {
+    text-align: center;
   }
 }
