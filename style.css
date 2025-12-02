@@ -116,10 +116,12 @@ header div a {
   font-size: 0.875rem;
   font-weight: 700;
   text-decoration: none;
+  /* TODO */
 }
 
 /* Hero */
 main  section:nth-child(1) {
+main > section:nth-child(1) {
   height: 500px;
   text-align: center;
   display: flex;
@@ -180,7 +182,10 @@ form input[type="text"] {
   font-size: 1rem;
   font-family: inherit;
 }
-
+/* Placeholder del input */
+form input[type="text"]::placeholder {
+  color: #64748b;
+}
 /* Botón de búsqueda */
 button {
   padding: 0.75rem 1.5rem;
@@ -274,6 +279,7 @@ main > section:nth-child(2) footer {
     }
 }
 
+*/
 
 /* Footer */
 footer {
@@ -289,6 +295,7 @@ footer {
     font-size: 0.875rem;
   }
 
+}
 
 article {
   background-color: var(--card-bg);
@@ -563,6 +570,8 @@ article {
 
 }
 
+
+
 .c2-item h3 {
     color: var(--text-primary);
     font-size: 1.2rem;
@@ -611,43 +620,3 @@ article {
   font-size: 20px;
 }
 
-/*infignación a la acción*/
-
-.indignacion {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
-  gap: 22px;
-  max-width: 900px;
-  margin: 2rem auto;
-}
-
-/* Tarjetas */
-.indignacion article {
-  background: var(--card-bg);
-  padding: 1.8rem;
-  border-radius: 1rem;
-  border: 1px solid var(--primary-light);
-  box-shadow: 0 10px 25px rgba(0,153,255,0.25);
-  text-align: center;
-
-  /* Esto asegura el mismo tamaño */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  min-height: 220px; /* todas igual de altas */
-}
-
-.indignacion article h3 {
-  color: var(--primary-light);
-  margin: 1rem 0;
-}
-.indignacion article p {
-  color: var(--text-secondary);
-  flex-grow: 1;
-}
-@media (max-width: 700px) {
-  .indignacion {
-    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
-  }
-}
