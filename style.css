@@ -112,7 +112,7 @@ main > section:first-child img {
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  padding: 1rem 0;
+  padding: 10rem 0;
 }
 
 /* item:*/
