@@ -30,21 +30,42 @@ body {
   flex-direction: column;
 }
 
+/* ===================== */
+/* ESPACIADO GENERAL  */
+/* ===================== */
+
+/* Separación entre secciones principales */
+main > section {
+  margin-bottom: 5rem;
+}
+
+/* Separación entre artículos */
+article {
+  margin-bottom: 3rem;
+}
+
+/* Sección dentro de article */
+article > section {
+  margin-top: 3rem;
+}
+
+/* ===================== */
 /* Circle (imagen redonda) */
+/* ===================== */
 .circle {
-    width: 120px;            /* */
-    height: 120px;
-    border-radius: 50%;
-    overflow: hidden;
-    flex: 0 0 120px;
-    background: #222;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex: 0 0 120px;
+  background: #222;
 }
 
 .circle img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* Headings */
@@ -73,17 +94,21 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
 header h2 {
   font-size: 1.25rem;
 }
+
 header nav {
   display: flex;
   gap: 1rem;
 }
+
 header nav a {
   color: var(--text-secondary);
   text-decoration: none;
 }
+
 header nav a:hover {
   color: var(--primary);
 }
@@ -96,6 +121,7 @@ main > section:first-child {
   align-items: center;
   position: relative;
 }
+
 main > section:first-child img {
   position: absolute;
   inset: 0;
@@ -103,48 +129,51 @@ main > section:first-child img {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  mask-image: linear-gradient(to bottom, rgba(16,25,34,1) 5%, rgba(16,25,34,0) 80%);
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(16,25,34,1) 5%,
+    rgba(16,25,34,0) 80%
+  );
 }
 
-/*  tarjetas apiladas */
+/* Grid de tarjetas */
 .grid {
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  padding: 10rem 0;
+  padding: 1rem 0;
 }
 
-/* item:*/
+/* Item */
 .item {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 20px;
-  background: var(--card-bg);   /* misma paleta */
+  background: var(--card-bg);
   padding: 16px;
   border-radius: 12px;
   width: min(980px, 95%);
   box-shadow: 0 6px 12px -6px var(--shadow);
 }
 
-/* Contenido */
+/* Contenido item */
 .item-content {
   text-align: left;
   flex: 1;
 }
 
-/* Títulos */
 .item-content h3 {
   margin-bottom: 8px;
   font-size: 1.125rem;
 }
+
 .item-content p {
   color: var(--text-muted);
   line-height: 1.35;
 }
 
-/* artículos */
+/* Artículos */
 article {
   background: var(--card-bg);
   padding: 2rem;
@@ -165,7 +194,7 @@ article p {
   color: var(--text-muted);
 }
 
-/* foto */
+/* Footer */
 footer {
   border-top: 1px solid var(--border);
   padding: 16px;
@@ -175,7 +204,7 @@ footer small {
   color: var(--text-muted);
 }
 
-/* foto */
+/* Responsive */
 @media (max-width: 700px) {
   .item {
     flex-direction: column;
@@ -183,6 +212,7 @@ footer small {
     align-items: center;
     padding: 18px;
   }
+
   .item-content {
     text-align: center;
   }
