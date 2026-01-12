@@ -66,10 +66,10 @@ const form = document.getElementById('formulario');
             });
         }
 
-// CARGA INFINITA DE BLOQUES (LÍMITE 10)
+// CARGA INFINITA DE BLOQUES (LÍMITE 15)
 const container = document.getElementById("contenido");
 let contador = 0;
-const limite = 10;
+const limite = 15;
 
 function cargarBloques() {
     if (contador >= limite) return;
