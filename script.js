@@ -1,3 +1,42 @@
+// CARGA AUTOMÁTICA DEL CONTENIDO COMPLETO
+window.addEventListener('DOMContentLoaded', async () => {
+    const main = document.getElementById('content');
+    
+    try {
+        const response = await fetch('contenido/todo.html');
+        const html = await response.text();
+        
+        // Insertar después de la primera sección hero
+        main.insertAdjacentHTML('beforeend', html);
+        
+        // Re-inicializar el botón subir si es necesario
+        inicializarBotonSubir();
+        
+    } catch (error) {
+        console.error('Error al cargar el contenido:', error);
+    }
+});
+
+// Función para el botón subir (moverla aquí si no está ya)
+function inicializarBotonSubir() {
+    const btn = document.getElementById("btnSubir");
+    
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 400) {
+            btn.style.display = "flex";
+        } else {
+            btn.style.display = "none";
+        }
+    });
+    
+    btn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+}
+
 // BOTÓN SUBIR
 const btn = document.getElementById("btnSubir");
 
